@@ -19,6 +19,37 @@
       margin: 10px auto;
       max-width: 600px;
     }
+
+    /* Button Styling */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    /* Hover effect for the button */
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Content for Terms and Conditions */
+    #tncContent {
+      background-color: #f9f9f9;
+      color: #111;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: none; /* Hidden by default */
+      margin-top: 20px;
+    }
+
+    #tncContent h2 {
+      color: #FFD700;
+    }
   </style>
 </head>
 <body>
@@ -26,5 +57,33 @@
   <p>This is the official website of our upcoming skill-based game platform.</p>
   <p>We are currently under development.</p>
   <p>Contact us at: <strong>doulatgame.support@gmail.com</strong></p>
+
+  <!-- Button to show Terms and Conditions -->
+  <button id="showTnCBtn">Show Terms & Conditions</button>
+
+  <!-- Placeholder for the Terms and Conditions -->
+  <div id="tncContent">
+    <h2>Terms & Conditions</h2>
+    <p>
+      By using this website, you agree to the following terms and conditions:
+      <br>
+      (Insert your full Terms and Conditions here)
+    </p>
+  </div>
+
+  <script>
+    // Get the button and the T&C content div
+    const showTnCBtn = document.getElementById('showTnCBtn');
+    const tncContent = document.getElementById('tncContent');
+
+    // When the button is clicked, toggle the visibility of the T&C content
+    showTnCBtn.addEventListener('click', function() {
+      if (tncContent.style.display === 'none') {
+        tncContent.style.display = 'block';
+      } else {
+        tncContent.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
