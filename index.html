@@ -318,4 +318,136 @@ days for the refund to be processed to the end customer.
 </html>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Doulat Game; Sagar Delivery Services; Durga Enterprises</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+  }
+  h1 {
+    color: #FFD700;
+  }
+  p {
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 600px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .content {
+    background-color: #f9f9f9;
+    color: #111;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: none;
+  }
+  .content.active {
+    display: block;
+  }
+  .content h2 {
+    color: #FFD700;
+  }
+</style>
+</head>
+<body>
+
+<h1>Welcome to Doulat Game!; Sagar Delivery Services; Durga Enterprises</h1>
+<p>This is the official website of our upcoming skill-based game platform, delivery service, and tyre shop.</p>
+<p>We are currently under development.</p>
+<p>Contact us at: <strong>7318195903</strong></p>
+
+<button id="showTnCBtn">Show Terms & Conditions</button>
+<button id="showCancellationBtn">Show Refund & Cancellation Policy</button>
+<button id="showSagarBtn">Show Sagar Delivery Services</button>
+<button id="showDurgaBtn">Show Durga Enterprises</button>
+
+<div id="tncContent" class="content">
+  <h2>Terms & Conditions</h2>
+  <p>
+    By using this website, you agree to our terms including use of the platform, services, and data protection.
+    Please read carefully and contact us if you have questions.
+  </p>
+</div>
+
+<div id="cancellationContent" class="content">
+  <h2>Refund & Cancellation Policy</h2>
+  <p>
+    Cancellations must be made immediately after order placement. Refunds will be processed within 9-15 days after approval.
+    Please report damaged or defective items within 15 days.
+  </p>
+</div>
+
+<div id="sagarContent" class="content">
+  <h2>Sagar Delivery Services</h2>
+  <p>
+    Details about Sagar Delivery Services will be available soon. Stay tuned!
+  </p>
+</div>
+
+<div id="durgaContent" class="content">
+  <h2>Durga Enterprises</h2>
+  <p>
+    Information about Durga Enterprises coming soon. Thank you for your patience!
+  </p>
+</div>
+
+<script>
+  const buttons = {
+    tnc: document.getElementById('showTnCBtn'),
+    cancellation: document.getElementById('showCancellationBtn'),
+    sagar: document.getElementById('showSagarBtn'),
+    durga: document.getElementById('showDurgaBtn')
+  };
+
+  const contents = {
+    tnc: document.getElementById('tncContent'),
+    cancellation: document.getElementById('cancellationContent'),
+    sagar: document.getElementById('sagarContent'),
+    durga: document.getElementById('durgaContent')
+  };
+
+  function showOnly(contentToShow) {
+    for (const key in contents) {
+      if (contents.hasOwnProperty(key)) {
+        if (key === contentToShow) {
+          contents[key].classList.toggle('active');
+        } else {
+          contents[key].classList.remove('active');
+        }
+      }
+    }
+  }
+
+  buttons.tnc.addEventListener('click', () => showOnly('tnc'));
+  buttons.cancellation.addEventListener('click', () => showOnly('cancellation'));
+  buttons.sagar.addEventListener('click', () => showOnly('sagar'));
+  buttons.durga.addEventListener('click', () => showOnly('durga'));
+</script>
+
+</body>
+</html>
+
 
