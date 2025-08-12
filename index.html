@@ -53,10 +53,10 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to Doulat Game!</h1>
-  <p>This is the official website of our upcoming skill-based game platform.</p>
+  <h1>Welcome to Doulat Game! ; Sagar delivery services; Durga enterprises </h1>
+  <p>This is the official website of our upcoming skill-based game platform.and delivery service and tyre shop</p>
   <p>We are currently under development.</p>
-  <p>Contact us at: <strong>yashawant109@gmail.com</strong></p>
+  <p>Contact us at: <strong>7318195903</strong></p>
 
   <!-- Button to show Terms and Conditions -->
   <button id="showTnCBtn">Show Terms & Conditions</button>
@@ -71,7 +71,7 @@
       By using this website, you agree to the following terms and conditions:
       <br>Terms & Conditions
 Last updated on 19-04-2025 10:29:08
-These Terms and Conditions, along with privacy policy or other terms (“Terms”) constitute a binding agreement by and between YASHAWANT KUMAR, ( “Website Owner” or “we” or “us” or “our”) and you (“you” or “your”) and relate to your use of our website, goods (as applicable) or services (as applicable) (collectively, “Services”).
+These Terms and Conditions, along with privacy policy or other terms (“Terms”) constitute a binding agreement by and between Yogesh KUMAR, ( “Website Owner” or “we” or “us” or “our”) and you (“you” or “your”) and relate to your use of our website, goods (as applicable) or services (as applicable) (collectively, “Services”).
 
 By using our website and availing the Services, you agree that you have read and accepted these Terms (including the Privacy Policy). We reserve the right to modify these Terms at any time and without assigning any reason. It is your responsibility to periodically review these Terms to stay informed of updates.
 
@@ -156,4 +156,165 @@ days for the refund to be processed to the end customer.
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doulat Game ; Sagar delivery services; Durga enterprises </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #FFD700;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px auto;
+      max-width: 600px;
+    }
+    /* Button Styling */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin: 10px;
+    }
+    /* Hover effect for the button */
+    button:hover {
+      background-color: #45a049;
+    }
+    /* Content Styling */
+    .content {
+      background-color: #f9f9f9;
+      color: #111;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: none; /* Hidden by default */
+      margin-top: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    .content h2 {
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Doulat Game! ; Sagar delivery services; Durga enterprises </h1>
+  <p>This is the official website of our upcoming skill-based game platform.and delivery service and tyre shop</p>
+  <p>We are currently under development.</p>
+  <p>Contact us at: <strong>7318195903</strong></p>
+
+  <!-- Existing Buttons -->
+  <button id="showTnCBtn">Show Terms & Conditions</button>
+  <button id="showCancellationBtn">Show Refund & Cancellation Policy</button>
+  
+  <!-- New Buttons -->
+  <button id="showSagarBtn">Show Sagar Delivery Services</button>
+  <button id="showDurgaBtn">Show Durga Enterprises</button>
+
+  <!-- Existing Content -->
+  <div id="tncContent" class="content">
+    <h2>Terms & Conditions</h2>
+    <p>
+      <!-- Terms & Conditions text here (unchanged) -->
+      By using this website, you agree to the following terms and conditions:
+      ... (your existing T&C content) ...
+    </p>
+  </div>
+
+  <div id="cancellationContent" class="content">
+    <h2>Refund Policy & Cancellation Policy</h2>
+    <p>
+      <!-- Refund & Cancellation policy text here (unchanged) -->
+      Our cancellation and refund policy is as follows:
+      ... (your existing refund policy content) ...
+    </p>
+  </div>
+
+  <!-- New Content Sections -->
+  <div id="sagarContent" class="content">
+    <h2>Sagar Delivery Services</h2>
+    <p>
+      <!-- You can add the details about Sagar Delivery Services here in the future -->
+      Information about Sagar Delivery Services will be updated soon.
+    </p>
+  </div>
+
+  <div id="durgaContent" class="content">
+    <h2>Durga Enterprises</h2>
+    <p>
+      <!-- You can add the details about Durga Enterprises here in the future -->
+      Information about Durga Enterprises will be updated soon.
+    </p>
+  </div>
+
+  <script>
+    // Get buttons and content divs
+    const showTnCBtn = document.getElementById('showTnCBtn');
+    const showCancellationBtn = document.getElementById('showCancellationBtn');
+    const showSagarBtn = document.getElementById('showSagarBtn');
+    const showDurgaBtn = document.getElementById('showDurgaBtn');
+
+    const tncContent = document.getElementById('tncContent');
+    const cancellationContent = document.getElementById('cancellationContent');
+    const sagarContent = document.getElementById('sagarContent');
+    const durgaContent = document.getElementById('durgaContent');
+
+    // Toggle Terms & Conditions content
+    showTnCBtn.addEventListener('click', function() {
+      toggleVisibility(tncContent);
+      // Hide others when one is opened for clean UI
+      hideContent([cancellationContent, sagarContent, durgaContent]);
+    });
+
+    // Toggle Cancellation Policy content
+    showCancellationBtn.addEventListener('click', function() {
+      toggleVisibility(cancellationContent);
+      hideContent([tncContent, sagarContent, durgaContent]);
+    });
+
+    // Toggle Sagar Delivery Services content
+    showSagarBtn.addEventListener('click', function() {
+      toggleVisibility(sagarContent);
+      hideContent([tncContent, cancellationContent, durgaContent]);
+    });
+
+    // Toggle Durga Enterprises content
+    showDurgaBtn.addEventListener('click', function() {
+      toggleVisibility(durgaContent);
+      hideContent([tncContent, cancellationContent, sagarContent]);
+    });
+
+    // Function to toggle visibility of content
+    function toggleVisibility(contentDiv) {
+      if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
+        contentDiv.style.display = 'block';
+      } else {
+        contentDiv.style.display = 'none';
+      }
+    }
+
+    // Helper function to hide multiple content divs
+    function hideContent(contentDivs) {
+      contentDivs.forEach(div => {
+        div.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>
+
 
