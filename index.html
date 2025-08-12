@@ -215,31 +215,9 @@ days for the refund to be processed to the end customer.
 </head>
 <body>
 
-<h1>Welcome to Doulat Game!; Sagar Delivery Services; Durga Enterprises</h1>
-<p>This is the official website of our upcoming skill-based game platform, delivery service, and tyre shop.</p>
-<p>We are currently under development.</p>
-<p>Contact us at: <strong>7318195903</strong></p>
-
-<button id="showTnCBtn">Show Terms & Conditions</button>
-<button id="showCancellationBtn">Show Refund & Cancellation Policy</button>
 <button id="showSagarBtn">Show Sagar Delivery Services</button>
 <button id="showDurgaBtn">Show Durga Enterprises</button>
 
-<div id="tncContent" class="content">
-  <h2>Terms & Conditions</h2>
-  <p>
-    By using this website, you agree to our terms including use of the platform, services, and data protection.
-    Please read carefully and contact us if you have questions.
-  </p>
-</div>
-
-<div id="cancellationContent" class="content">
-  <h2>Refund & Cancellation Policy</h2>
-  <p>
-    Cancellations must be made immediately after order placement. Refunds will be processed within 9-15 days after approval.
-    Please report damaged or defective items within 15 days.
-  </p>
-</div>
 
 <div id="sagarContent" class="content">
   <h2>Sagar Delivery Services</h2>
@@ -257,8 +235,6 @@ days for the refund to be processed to the end customer.
 
 <script>
   const buttons = {
-    tnc: document.getElementById('showTnCBtn'),
-    cancellation: document.getElementById('showCancellationBtn'),
     sagar: document.getElementById('showSagarBtn'),
     durga: document.getElementById('showDurgaBtn')
   };
@@ -282,14 +258,13 @@ days for the refund to be processed to the end customer.
     }
   }
 
-  buttons.tnc.addEventListener('click', () => showOnly('tnc'));
-  buttons.cancellation.addEventListener('click', () => showOnly('cancellation'));
   buttons.sagar.addEventListener('click', () => showOnly('sagar'));
   buttons.durga.addEventListener('click', () => showOnly('durga'));
 </script>
 
 </body>
 </html>
+
 
 
 
