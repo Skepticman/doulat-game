@@ -72,6 +72,7 @@
   </style>
 </head>
 <body>
+<audio id="bgMusic" src="bg-music.mp3" loop></audio>
 
   <h1>Welcome to Doulat Game! ; Sagar Delivery Services ; Durga Enterprises</h1>
   <p>This is the official website of our upcoming skill-based game platform, delivery service, and tyre shop.</p>
@@ -195,7 +196,29 @@
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();
+
+    const bgMusic = document.getElementById('bgMusic');
+  let musicStarted = false;
+
+  // Try to autoplay when user interacts with the page
+  document.addEventListener('click', () => {
+    if (!musicStarted) {
+      bgMusic.play().catch(err => console.log('Autoplay blocked:', err));
+      musicStarted = true;
+    }
+  });
+
+  // Optional toggle button
+  function toggleMusic() {
+    if (bgMusic.paused) {
+      bgMusic.play();
+    } else {
+      bgMusic.pause();
+    }
+  }
   </script>
 
 </body>
+  
 </html>
+
