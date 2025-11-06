@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Doulat Game ; Sagar delivery services; Durga enterprises </title>
+  <meta charset="UTF-8" />
+  <title>Doulat Game ; Sagar Delivery Services ; Durga Enterprises</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,16 +11,17 @@
       text-align: center;
       padding: 50px;
     }
+
     h1 {
       color: #FFD700;
     }
+
     p {
       font-size: 18px;
       margin: 10px auto;
-      max-width: 600px;
+      max-width: 650px;
     }
 
-    /* Button Styling */
     button {
       background-color: #4CAF50;
       color: white;
@@ -31,365 +32,170 @@
       margin: 10px;
     }
 
-    /* Hover effect for the button */
     button:hover {
       background-color: #45a049;
     }
 
-    /* Content Styling */
     .content {
       background-color: #f9f9f9;
       color: #111;
       padding: 30px;
       border-radius: 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      display: none; /* Hidden by default */
       margin-top: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      display: none;
+    }
+
+    .content.active {
+      display: block;
     }
 
     .content h2 {
       color: #002366;
     }
+
     .blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
+      animation: blink 1s infinite;
+      font-weight: bold;
+      font-size: 22px;
+    }
 
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}.blinking {
-  animation: blink 1s infinite;
-  font-weight: bold;   /* make it bold */
-  font-size: 22px;     /* make it bigger */
-}
-
-@keyframes blink {
-  0%   { opacity: 1; }
-  50%  { opacity: 0; }
-  100% { opacity: 1; }
-}
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Doulat Game! ; Sagar delivery services; Durga enterprises </h1>
-  <p>This is the official website of our upcoming skill-based game platform.and delivery service and tyre shop</p>
+
+  <h1>Welcome to Doulat Game! ; Sagar Delivery Services ; Durga Enterprises</h1>
+  <p>This is the official website of our upcoming skill-based game platform, delivery service, and tyre shop.</p>
   <p>We are currently under development.</p>
-  <p style="color:#00008B;">Contact us at: <strong> Durga Enterprises-7318195903   <font color="#FFD700" class="blinking"> </br> Med del services Robertsganj Sonebhadra- 9695603286</font></strong></p>
 
-  <!-- Button to show Terms and Conditions -->
-  <button id="showTnCBtn"><font size="5">Show Terms & Conditions</font></button>
+  <p style="color:#00008B;">
+    Contact us at:
+    <strong>
+      Durga Enterprises - 7318195903
+      <br />
+      <span class="blinking" style="color:#FFD700;">
+        Med Del Services Robertsganj Sonebhadra - 9695603286
+      </span>
+    </strong>
+  </p>
 
-  <!-- Button to show Refund & Cancellation Policy -->
-  <button id="showCancellationBtn"><font size="5">Show Refund & Cancellation Policy</font></button>
+  <!-- Buttons -->
+  <button id="showTnCBtn">Show Terms & Conditions</button>
+  <button id="showCancellationBtn">Show Refund & Cancellation Policy</button>
+  <button id="showSagarBtn">Show Sagar Delivery Services</button>
+  <button id="showDurgaBtn">Show Durga Enterprises</button>
 
-  <!-- Terms and Conditions Content -->
+  <!-- Terms & Conditions -->
   <div id="tncContent" class="content">
     <h2>Terms & Conditions</h2>
     <p>
-      By using this website, you agree to the following terms and conditions:
-      <br>Terms & Conditions
-Last updated on 19-04-2025 10:29:08
-These Terms and Conditions, along with privacy policy or other terms (“Terms”) constitute a binding agreement by and between Yogesh KUMAR, ( “Website Owner” or “we” or “us” or “our”) and you (“you” or “your”) and relate to your use of our website, goods (as applicable) or services (as applicable) (collectively, “Services”).
-
-By using our website and availing the Services, you agree that you have read and accepted these Terms (including the Privacy Policy). We reserve the right to modify these Terms at any time and without assigning any reason. It is your responsibility to periodically review these Terms to stay informed of updates.
-
-The use of this website or availing of our Services is subject to the following terms of use:
-
-To access and use the Services, you agree to provide true, accurate and complete information to us during and after registration, and you shall be responsible for all acts done through the use of your registered account.
-Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials offered on this website or through the Services, for any specific purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.
-Your use of our Services and the websiteis solely at your own risk and discretion.. You are required to independently assess and ensure that the Services meet your requirements.
-The contents of the Website and the Services are proprietary to Us and you will not have any authority to claim any intellectual property rights, title, or interest in its contents.
-You acknowledge that unauthorized use of the Website or the Services may lead to action against you as per these Terms or applicable laws.
-You agree to pay us the charges associated with availing the Services.
-You agree not to use the website and/ or Services for any purpose that is unlawful, illegal or forbidden by these Terms, or Indian or local laws that might apply to you.
-You agree and acknowledge that website and the Services may contain links to other third party websites. On accessing these links, you will be governed by the terms of use, privacy policy and such other policies of such third party websites.
-You understand that upon initiating a transaction for availing the Services you are entering into a legally binding and enforceable contract with the us for the Services.
-You shall be entitled to claim a refund of the payment made by you in case we are not able to provide the Service. The timelines for such return and refund will be according to the specific Service you have availed or within the time period provided in our policies (as applicable). In case you do not raise a refund claim within the stipulated time, than this would make you ineligible for a refund.
-Notwithstanding anything contained in these Terms, the parties shall not be liable for any failure to perform an obligation under these Terms if performance is prevented or delayed by a force majeure event.
-These Terms and any dispute or claim relating to it, or its enforceability, shall be governed by and construed in accordance with the laws of India.
-All disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts in Robertsganj sonbhadra, UTTAR PRADESH
-All concerns or communications relating to these Terms must be communicated to us using the contact information provided on this website.
+      Last updated on 19-04-2025 10:29:08<br><br>
+      These Terms and Conditions, along with the Privacy Policy, constitute a binding agreement between Yogesh Kumar (“Website Owner”) and you (“User”).
+      <br><br>
+      By using this website and availing our services, you agree to provide accurate information and use the platform responsibly. You acknowledge that information provided may contain errors and that your use of this website is at your own risk.
+      <br><br>
+      The contents of the website and the services are proprietary to us. Unauthorized use may lead to legal action.
+      <br><br>
+      Refunds are available only as per specific service policies. All disputes are subject to the jurisdiction of courts in Robertsganj, Sonebhadra, Uttar Pradesh.
     </p>
   </div>
 
-
-
-  <!-- Refund Policy & Cancellation Policy Content -->
+  <!-- Refund & Cancellation Policy -->
   <div id="cancellationContent" class="content">
-    <h2>Refund Policy & Cancellation Policy</h2>
+    <h2>Refund & Cancellation Policy</h2>
     <p>
-      Our cancellation and refund policy is as follows:
-      <br>Cancellation & Refund Policy
-Last updated on 18-04-2025 18:39:58
-Yogesh Kumar believes in helping its customers as far as possible, and has therefore a liberal
-cancellation policy. Under this policy:
-• Cancellations will be considered only if the request is made immediately after placing the order.
-However, the cancellation request may not be entertained if the orders have been communicated to the
-vendors/merchants and they have initiated the process of shipping them.
-• Yogesh Kumar does not accept cancellation requests for when user transact with anomly or tempering frontend and by using different way whatever,
-eatables etc. However, refund can be made if the customer establishes that the transaction is not good it means some our website server side issue to make it should not tempering of users.
-• In case of receipt of damaged or defective items please report the same to our Customer Service team.
-The request will, however, be entertained once the merchant has checked and determined the same at his
-own end. This should be reported within 15 Days days of receipt of the products. In case you feel that the
-product received is not as shown on the site or as per your expectations, you must bring it to the notice of
-our customer service within 15 Days days of receiving the transactions. The Customer Service Team after
-looking into your complaint will take an appropriate decision.
-• In case of complaints regarding trasaction , please refer
-the issue to them. In case of any Refunds approved by the Yogesh Kumar, it’ll take 9-15 Days
-days for the refund to be processed to the end customer.
+      Last updated on 18-04-2025 18:39:58<br><br>
+      Yogesh Kumar believes in helping customers as far as possible. Under this policy:
+      <ul>
+        <li>Cancellations must be made immediately after placing an order, before shipping begins.</li>
+        <li>No cancellations are accepted once processing starts or in cases of fraudulent behavior.</li>
+        <li>Refunds are possible only for genuine technical or service-related issues verified by our team.</li>
+        <li>Complaints about defective or incorrect transactions must be reported within 15 days.</li>
+        <li>Approved refunds will be processed within 9–15 working days.</li>
+      </ul>
     </p>
   </div>
 
+  <!-- Sagar Delivery Services -->
+  <div id="sagarContent" class="content">
+    <h2>Sagar Delivery Services</h2>
+    <p>
+      Contact: <strong>9695603286</strong><br><br>
+      We offer:
+      <ul>
+        <li>Medicine delivery</li>
+        <li>Home grocery delivery</li>
+        <li>Injury dressing (doctor prescribed)</li>
+        <li>Blood sample collection and report delivery</li>
+        <li>Pickup & delivery of items at minimal charges</li>
+      </ul>
+      We act as your shadow — purchasing, returning, and marketing for you!
+    </p>
+  </div>
+
+  <!-- Durga Enterprises -->
+  <div id="durgaContent" class="content">
+    <h2>Durga Enterprises</h2>
+    <p>
+      Information about Durga Enterprises coming soon. Thank you for your patience!
+    </p>
+  </div>
+
+  <!-- Scripts -->
   <script>
-    // Get buttons and content divs
-    const showTnCBtn = document.getElementById('showTnCBtn');
-    
-    const showCancellationBtn = document.getElementById('showCancellationBtn');
+    const buttons = {
+      tnc: document.getElementById('showTnCBtn'),
+      cancel: document.getElementById('showCancellationBtn'),
+      sagar: document.getElementById('showSagarBtn'),
+      durga: document.getElementById('showDurgaBtn')
+    };
 
-    const tncContent = document.getElementById('tncContent');
-    
-    const cancellationContent = document.getElementById('cancellationContent');
+    const contents = {
+      tnc: document.getElementById('tncContent'),
+      cancel: document.getElementById('cancellationContent'),
+      sagar: document.getElementById('sagarContent'),
+      durga: document.getElementById('durgaContent')
+    };
 
-    // Toggle Terms & Conditions content
-    showTnCBtn.addEventListener('click', function() {
-      toggleVisibility(tncContent);
-    });
-
-   
-
-    // Toggle Cancellation Policy content
-    showCancellationBtn.addEventListener('click', function() {
-      toggleVisibility(cancellationContent);
-    });
-
-    // Function to toggle visibility of content
-    function toggleVisibility(contentDiv) {
-      if (contentDiv.style.display === 'none') {
-        contentDiv.style.display = 'block';
-      } else {
-        contentDiv.style.display = 'none';
-      }
-    }
-
-<head>
-<meta charset="UTF-8" />
-<title>Doulat Game; Sagar Delivery Services; Durga Enterprises</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #FAFAFA;
-    color: #fff;
-    text-align: center;
-    padding: 50px;
-  }
-  h1 {
-    color: #FFD700;
-  }
-  p {
-    font-size: 18px;
-    margin: 10px auto;
-    max-width: 650px;
-  }
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 35px 30px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    margin: 10px;
-  }
-  button:hover {
-    background-color: #45a049;
-  }
-  .content {
-    background-color: #f9f9f9;
-    color: #111;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-top: 20px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    display: none;
-  }
-  .content.active {
-    display: block;
-  }
-  .content h2 {
-    color: #002366;
-  }
-</style>
-</head>
-<body>
-
-<button id="showSagarBtn"><font size="7">Show Sagar Delivery Services</font></button>
-<button id="showDurgaBtn"><font size="5">Show Durga Enterprises</font></button>
-
-
-<div id="sagarContent" class="content">
-  <h2>Sagar Delivery Services</h2>
-  <p>
-    Details about Sagar Delivery services- this is contact no <font size="5">" 9695603286 "</font> in this service we provide all kind of medicine delivery , house grocery delivery at your known price rate we just take for it delivery charge only , and we provide service for dressing of injuries which you are currently diagnosed by doctor and Blood sample collection from your doorstep and give you blood test result according you wanted and you can deliver any object and things which you want for little delivery charge basically we are your shadow who talk , purchage, return and marketing for you !
-  </p>
-</div>
-
-<div id="durgaContent" class="content">
-  <h2>Durga Enterprises</h2>
-  <p>
-    Information about Durga Enterprises coming soon. Thank you for your patience!
-  </p>
-</div>
-
-<script>
-  const buttons = {
-    sagar: document.getElementById('showSagarBtn'),
-    durga: document.getElementById('showDurgaBtn')
-  };
-
-  const contents = {
-    tnc: document.getElementById('tncContent'),
-    cancellation: document.getElementById('cancellationContent'),
-    sagar: document.getElementById('sagarContent'),
-    durga: document.getElementById('durgaContent')
-  };
-
-  function showOnly(contentToShow) {
-    for (const key in contents) {
-      if (contents.hasOwnProperty(key)) {
-        if (key === contentToShow) {
-          contents[key].classList.toggle('active');
-        } else {
-          contents[key].classList.remove('active');
+    function toggleContent(contentToShow) {
+      for (const key in contents) {
+        if (contents.hasOwnProperty(key)) {
+          if (key === contentToShow) {
+            contents[key].classList.toggle('active');
+          } else {
+            contents[key].classList.remove('active');
+          }
         }
       }
     }
-  }
 
-  buttons.sagar.addEventListener('click', () => showOnly('sagar'));
-  buttons.durga.addEventListener('click', () => showOnly('durga'));
-</script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/690c957a43ae26195bde38c3/1j9cifpt8';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    buttons.tnc.addEventListener('click', () => toggleContent('tnc'));
+    buttons.cancel.addEventListener('click', () => toggleContent('cancel'));
+    buttons.sagar.addEventListener('click', () => toggleContent('sagar'));
+    buttons.durga.addEventListener('click', () => toggleContent('durga'));
+  </script>
+
+  <!-- Tawk.to Chat -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function(){
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/690c957a43ae26195bde38c3/1j9cifpt8';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
