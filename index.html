@@ -72,7 +72,27 @@
   </style>
 </head>
 <body>
+  
+<audio id="bgMusic" src="bg-music.mp3" loop muted playsinline></audio>
+<script>
+  const bgMusic = document.getElementById('bgMusic');
 
+  // Try autoplay if allowed (some browsers let muted audio start)
+  bgMusic.play().catch(() => {
+    console.log('Waiting for user interaction to play music...');
+  });
+
+  // Unmute and play when user interacts
+  document.addEventListener('click', () => {
+    if (bgMusic.paused) {
+      bgMusic.muted = false;
+      bgMusic.play().catch(err => console.log('Play failed:', err));
+    }
+  });
+</script>
+
+
+  
   <h1>Welcome to Doulat Game! ; Sagar Delivery Services ; Durga Enterprises</h1>
   <p>This is the official website of our upcoming skill-based game platform, delivery service, and tyre shop.</p>
   <p>We are currently under development.</p>
@@ -196,16 +216,7 @@
       s0.parentNode.insertBefore(s1, s0);
     })();
 
-    const bgMusic = document.getElementById('bgMusic');
-  let musicStarted = false;
-
-  // Try to autoplay when user interacts with the page
-  document.addEventListener('click', () => {
-    if (!musicStarted) {
-      bgMusic.play().catch(err => console.log('Autoplay blocked:', err));
-      musicStarted = true;
-    }
-  });
+   
 
   // Optional toggle button
   function toggleMusic() {
@@ -216,9 +227,10 @@
     }
   }
   </script>
-<audio id="bgMusic" src="bg-music.mp3" loop></audio>
+
 </body>
   
 </html>
+
 
 
