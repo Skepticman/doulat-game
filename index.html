@@ -125,6 +125,20 @@ button:active {
       bgMusic.play().catch(err => console.log('Play failed:', err));
     }
   });
+
+  const clickSound = document.getElementById('clickSound');
+
+  // Function to play click sound safely
+  function playClickSound() {
+    clickSound.currentTime = 0; // restart if still playing
+    clickSound.volume = 0.4; // adjust sound level (0.0 to 1.0)
+    clickSound.play().catch(err => console.log('Click sound blocked:', err));
+  }
+
+  // Attach to all buttons
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', playClickSound);
+  });
 </script>
 
 
@@ -264,25 +278,14 @@ button:active {
     }
   }
 
-   const clickSound = document.getElementById('clickSound');
-
-  // Function to play click sound safely
-  function playClickSound() {
-    clickSound.currentTime = 0; // restart if still playing
-    clickSound.volume = 0.4; // adjust sound level (0.0 to 1.0)
-    clickSound.play().catch(err => console.log('Click sound blocked:', err));
-  }
-
-  // Attach to all buttons
-  document.querySelectorAll('button').forEach(btn => {
-    btn.addEventListener('click', playClickSound);
-  });
+   
     
   </script>
 
 </body>
   
 </html>
+
 
 
 
