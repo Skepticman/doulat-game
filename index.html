@@ -76,6 +76,7 @@
 <audio id="bgMusic" src="bg-music.mp3" loop muted playsinline></audio>
 <script>
   const bgMusic = document.getElementById('bgMusic');
+  bgMusic.volume = 0.1;
 
   // Try autoplay if allowed (some browsers let muted audio start)
   bgMusic.play().catch(() => {
@@ -231,6 +232,7 @@
 </body>
   
 </html>
+
 
 
 
