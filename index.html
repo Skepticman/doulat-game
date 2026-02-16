@@ -1,305 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Doulat Game & Work & service </title>
+  <meta charset="UTF-8">
+  <title>Doulat Game</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+      background-color: #111;
       color: #fff;
       text-align: center;
       padding: 50px;
     }
-
     h1 {
       color: #FFD700;
     }
-
     p {
       font-size: 18px;
       margin: 10px auto;
-      max-width: 650px;
-    }
-
-    button {
-  position: relative;
-  background: linear-gradient(135deg, #00f260, #0575e6);
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  padding: 18px 40px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0 0 10px rgba(0, 255, 200, 0.4);
-  transition: all 0.3s ease;
-  overflow: hidden;
-  z-index: 1;
-}
-
-button::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.4) 10%, transparent 10.01%);
-  background-size: 10px 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 0;
-}
-
-button:hover::before {
-  opacity: 0.2;
-}
-
-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
-}
-
-button:active {
-  transform: scale(0.97);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
-}
-
-
-    .content {
-      background-color: #f9f9f9;
-      color: #111;
-      padding: 30px;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-top: 20px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
-      display: none;
-    }
-
-    .content.active {
-      display: block;
-    }
-
-    .content h2 {
-      color: #002366;
-    }
-
-    .blinking {
-      animation: blink 1s infinite;
-      font-weight: bold;
-      font-size: 22px;
-    }
-
-    @keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 0; }
-      100% { opacity: 1; }
+      max-width: 600px;
     }
   </style>
 </head>
 <body>
-  
-<audio id="bgMusic" src="bg-music.mp3" loop muted playsinline></audio>
-  <audio id="clickSound" src="click.mp3" preload="auto"></audio>
-<script>
-  const bgMusic = document.getElementById('bgMusic');
-  bgMusic.volume = 0.1;
-
-  // Try autoplay if allowed (some browsers let muted audio start)
-  bgMusic.play().catch(() => {
-    console.log('Waiting for user interaction to play music...');
-  });
-
-  // Unmute and play when user interacts
-  document.addEventListener('click', () => {
-    if (bgMusic.paused) {
-      bgMusic.muted = false;
-      bgMusic.play().catch(err => console.log('Play failed:', err));
-    }
-  });
-
-  // Optional toggle button
-  function toggleMusic() {
-    if (bgMusic.paused) {
-      bgMusic.play();
-    } else {
-      bgMusic.pause();
-    }
-  }
-</script>
-
-  <script>
-  const clickSound = document.getElementById('clickSound');
-  function playClickSound() {
-    clickSound.currentTime = 0;
-    clickSound.volume = 0.5;
-    clickSound.play().catch(err => console.log('Click sound blocked:', err));
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', playClickSound);
-    });
-  });
-</script>
-
-  
-  <h1>Welcome to Doulat Game! ; MED DEL SAGAR JI ; Durga Enterprises ; SAMEER PLUMBING WORK </h1>
-  <p>This is the official website of our upcoming skill-based game platform, delivery service, and tyre shop.</p>
+  <h1>Welcome to Doulat Game!</h1>
+  <p>This is the official website of our upcoming skill-based game platform.</p>
   <p>We are currently under development.</p>
-
-  <p style="color:#00008B;">
-    Contact us at:
-    <strong>
-      Durga Enterprises - 7318195903
-      <br />
-      <span class="blinking" style="color:#FFD700;">
-        Med Del Services Robertsganj Sonebhadra - 9695603286
-      </span>
-    </strong>
-  </p>
-
-  <!-- Buttons -->
-  <button id="showTnCBtn"> Terms & Conditions</button>
-  <button id="showCancellationBtn"> Refund & Cancellation Policy </button>
-  <button id="showSagarBtn"> Sagar Delivery Services </button>
-  <button id="showDurgaBtn"> Durga Enterprises </button>
-  <button id="showSameerBtn">Sameer Plumbing Work </button>
-
-  <!-- Terms & Conditions -->
-  <div id="tncContent" class="content">
-    <h2>Terms & Conditions</h2>
-    <p>
-      Last updated on 19-04-2025 10:29:08<br><br>
-      These Terms and Conditions, along with the Privacy Policy, constitute a binding agreement between Yogesh Kumar (“Website Owner”) and you (“User”).
-      <br><br>
-      By using this website and availing our services, you agree to provide accurate information and use the platform responsibly. You acknowledge that information provided may contain errors and that your use of this website is at your own risk.
-      <br><br>
-      The contents of the website and the services are proprietary to us. Unauthorized use may lead to legal action.
-      <br><br>
-      Refunds are available only as per specific service policies. All disputes are subject to the jurisdiction of courts in Robertsganj, Sonebhadra, Uttar Pradesh.
-    </p>
-  </div>
-
-  <!-- Refund & Cancellation Policy -->
-  <div id="cancellationContent" class="content">
-    <h2>Refund & Cancellation Policy</h2>
-    <p>
-      Last updated on 18-04-2025 18:39:58<br><br>
-      Yogesh Kumar believes in helping customers as far as possible. Under this policy:
-      <ul>
-        <li>Cancellations must be made immediately after placing an order, before shipping begins.</li>
-        <li>No cancellations are accepted once processing starts or in cases of fraudulent behavior.</li>
-        <li>Refunds are possible only for genuine technical or service-related issues verified by our team.</li>
-        <li>Complaints about defective or incorrect transactions must be reported within 15 days.</li>
-        <li>Approved refunds will be processed within 9–15 working days.</li>
-      </ul>
-    </p>
-  </div>
-
-  <!-- Sagar Delivery Services -->
-  <div id="sagarContent" class="content">
-    <h2>Sagar Delivery Services</h2>
-    <p>
-      Contact: <strong>9695603286</strong><br><br>
-      We offer:
-      <ul>
-        <li>Medicine delivery</li>
-        <li>Home grocery delivery</li>
-        <li>Injury dressing (doctor prescribed)</li>
-        <li>Blood sample collection and report delivery</li>
-        <li>Pickup & delivery of items at minimal charges</li>
-      </ul>
-      We act as your shadow — purchasing, returning, and marketing for you!
-    </p>
-  </div>
-
-  <!-- Durga Enterprises -->
-  <div id="durgaContent" class="content">
-    <h2>Durga Enterprises</h2>
-    <p>
-      Durga Enterprises contact number 7318195903
-      
-        <li>MRF Tyre </li>
-        <li>Puncture Repair shop </li>
-        <li>CEAT Tyre </li>
-    </p>
-  </div>
-
-  <!-- Scripts -->
-  <script>
-    const buttons = {
-      tnc: document.getElementById('showTnCBtn'),
-      cancel: document.getElementById('showCancellationBtn'),
-      sagar: document.getElementById('showSagarBtn'),
-      durga: document.getElementById('showDurgaBtn')
-    };
-
-    const contents = {
-      tnc: document.getElementById('tncContent'),
-      cancel: document.getElementById('cancellationContent'),
-      sagar: document.getElementById('sagarContent'),
-      durga: document.getElementById('durgaContent')
-    };
-
-    function toggleContent(contentToShow) {
-      for (const key in contents) {
-        if (contents.hasOwnProperty(key)) {
-          if (key === contentToShow) {
-            contents[key].classList.toggle('active');
-          } else {
-            contents[key].classList.remove('active');
-          }
-        }
-      }
-    }
-
-    buttons.tnc.addEventListener('click', () => toggleContent('tnc'));
-    buttons.cancel.addEventListener('click', () => toggleContent('cancel'));
-    buttons.sagar.addEventListener('click', () => toggleContent('sagar'));
-    buttons.durga.addEventListener('click', () => toggleContent('durga'));
-  </script>
-
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/690d2e8a28c3c5195535ccf9/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script--> 
-
-    
-    
-  </script>
-
+  <p>Payments, deposits, and withdrawals will be powered by Razorpay.</p>
+  <p>Contact us at: <strong>doulatgame.support@gmail.com</strong></p>
 </body>
-  
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
