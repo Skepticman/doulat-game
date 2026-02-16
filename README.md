@@ -1,1 +1,1 @@
-# doulat-game
+# Multy service
